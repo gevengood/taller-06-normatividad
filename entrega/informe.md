@@ -24,7 +24,7 @@ En esta Parte 2, adaptamos dicha metodología de auditoría y diagnóstico legal
 El trabajo se estructuró siguiendo estrictamente la metodología oficial de 5 pasos establecida en la guía del curso:
 
 ### Paso 1: Identificación de datos y procesos sensibles
-Se mapearon los activos de información y procesos clave definidos desde los Talleres 0, 1 y 2, identificando su grado de criticidad y el marco legal aplicable:
+Se mapearon los activos de información, procesos, contenedores C4, infraestructura y amenazas STRIDE definidos en los Talleres 0 a 5, identificando su grado de criticidad y el marco legal aplicable:
 - **Datos personales de clientes y prospectos:** Nombres de contacto, teléfonos móviles, correos electrónicos y cargos de directores de compras de aproximadamente 40 clínicas, consultorios odontológicos y spas. Regulado por la **Ley 1581 de 2012** y el **Decreto 1377 de 2013**.
 - **Datos de empleados y talento humano:** Información de los 6 colaboradores (hojas de vida, cédulas, números de cuenta de nómina, afiliaciones a seguridad social y registros de salud ocupacional). Calificados como datos personales y sensibles bajo la **Ley 1581 de 2012**.
 - **Trazabilidad de lotes y materias primas (Rollos de tela quirúrgica no tejida / SMS):** Datos de origen, número de lote del proveedor, fechas de corte, órdenes de producción y remisiones de despacho a instituciones de salud. Regulado por el **Decreto 4725 de 2005** y la **Resolución 4816 de 2008 (Tecnovigilancia INVIMA)**.
@@ -48,7 +48,7 @@ De acuerdo con las reglas metodológicas del curso, cada ítem se evaluó bajo s
 - **⚠️ Parcial (13 ítems):** Controles que actualmente no existen o están implementados de manera empírica, informal o incompleta en la operación cotidiana de la empresa.
 
 ### Paso 4: Documentación y análisis de riesgos de las brechas
-Cada uno de los 13 ítems marcados como **⚠️ Parcial** fue trasladado a la hoja `Brechas Identificadas` del archivo [`entrega/checklist-cliente.xlsx`](file:///C:/Users/Jorge/Desktop/Taller%206/taller-06-normatividad/entrega/checklist-cliente.xlsx), analizando el impacto ante su no corrección en términos legales (investigaciones o sanciones de la Superintendencia de Industria y Comercio - SIC o requerimientos del INVIMA), operativos (pérdida irrecuperable de datos por fallo físico de disco o secuestro mediante ransomware) y comerciales (fuga de bases de datos de clientes y fórmulas de patronaje).
+Cada uno de los 13 ítems marcados como **⚠️ Parcial** fue trasladado a la hoja `Brechas Identificadas` del archivo [`checklist-cliente.xlsx`](checklist-cliente.xlsx), analizando el impacto ante su no corrección en términos legales (investigaciones o sanciones de la Superintendencia de Industria y Comercio - SIC o requerimientos del INVIMA), operativos (pérdida irrecuperable de datos por fallo físico de disco o secuestro mediante ransomware) y comerciales (fuga de bases de datos de clientes y fórmulas de patronaje).
 
 ### Paso 5: Priorización y formulación de recomendaciones accionables
 Se asignó el nivel de prioridad (**Alta**, **Media**, **Baja**) a cada brecha considerando la gravedad del riesgo, la probabilidad de materialización y la viabilidad económica/operativa para una microempresa de 6 trabajadores, garantizando que cada recomendación proporcione una solución concreta y de aplicación progresiva.
@@ -58,7 +58,7 @@ Se asignó el nivel de prioridad (**Alta**, **Media**, **Baja**) a cada brecha c
 ## 🧩 Análisis del modelo propuesto
 
 ### Estructura de la evaluación entregada
-El artefacto central de evaluación es el libro de cálculo [`entrega/checklist-cliente.xlsx`](file:///C:/Users/Jorge/Desktop/Taller%206/taller-06-normatividad/entrega/checklist-cliente.xlsx), el cual se compone de dos hojas estructuradas:
+El artefacto central de evaluación es el libro de cálculo [`checklist-cliente.xlsx`](checklist-cliente.xlsx), el cual se compone de dos hojas estructuradas:
 1. **Hoja 1 (`Checklist General`):** Contiene la evaluación de los 15 criterios, señalando categoría, criterio auditado, nivel de cumplimiento obtenido, evidencia objetiva levantada en el negocio y la recomendación inicial.
 2. **Hoja 2 (`Brechas Identificadas`):** Contiene la matriz de riesgos derivada exclusivamente de las 13 deficiencias encontradas, detallando la categoría, la formulación concisa de la brecha, la severidad del riesgo (Alto, Medio o Bajo), la recomendación prioritaria y el nivel de prioridad asignado (Alta, Media o Baja).
 
@@ -223,7 +223,7 @@ El estándar internacional **ISO/IEC 27001:2022** en su Anexo A consolida 93 con
 - [8] International Organization for Standardization - ISO. (2022). *ISO/IEC 27001:2022: Information security, cybersecurity and privacy protection — Information security management systems — Requirements*. ISO, Ginebra.
 - [9] Center for Internet Security - CIS. (2021). *CIS Critical Security Controls Version 8 — Implementation Group 1 (IG1)*. CIS Security.
 - [10] Universidad de La Sabana. (2026). *Guía Paso a Paso: Checklist de Cumplimiento Normativo*. Material docente del curso Arquitectura Empresarial (AREM).
-- [11] Insuclínicos Ltda. (2026). *Ficha de Caracterización, Documento de Visión y Entrevista Primaria con Santiago Martínez (Representante Legal)*. Talleres 0, 1 y 2 del curso AREM.
+- [11] Insuclínicos Ltda. (2026). *Ficha de Caracterización, Documento de Visión, Modelos C4, Mapa de Infraestructura y Evaluación STRIDE (Entrevista con Santiago Martínez, Representante Legal)*. Talleres 0 a 5 del curso AREM.
 
 ---
 
